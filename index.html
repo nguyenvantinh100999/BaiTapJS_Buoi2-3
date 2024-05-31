@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bài Tập JS Buổi 2- 3</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="/img/ai-generated-8635748_1280.png"
+    />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+
+  <body>
+    <div class="container z-5">
+      <div class="row">
+        <div class="col-3 menu py-5 rounded-start-3 text-center">
+          <button class="buttonMenu" id="buttonMenu">
+            <i class="fa fa-book-open active" style="display: inline-block"></i>
+            <i class="fa fa-book active2" style="display: none"></i>
+            <span>Bài 1</span>
+          </button>
+          <button class="buttonMenu" id="buttonMenu2">
+            <i class="fa fa-book-open"></i>
+            <i class="fa fa-book"></i>
+            <span>Bài 2</span>
+          </button>
+          <button class="buttonMenu" id="buttonMenu3">
+            <i class="fa fa-book-open"></i>
+            <i class="fa fa-book"></i>
+            <span>Bài 3</span>
+          </button>
+          <button class="buttonMenu" id="buttonMenu4">
+            <i class="fa fa-book-open"></i>
+            <i class="fa fa-book"></i>
+            <span>Bài 4</span>
+          </button>
+          <button class="buttonMenu" id="buttonMenu5">
+            <i class="fa fa-book-open"></i>
+            <i class="fa fa-book"></i>
+            <span>Bài 5</span>
+          </button>
+        </div>
+        <div class="col bgGround text-white">
+          <div class="bai1">
+            <h1 class="text-center">Bài tập 1:Tính tiền lương nhân viên</h1>
+            <div class="fs-4">
+              <i class="fa fa-donate text-warning"></i>
+              <span>Tính tiền lương nhân viên</span>
+            </div>
+            <div class="form-group">
+              <div class="fs-4">
+                <i class="fa fa-lightbulb text-warning"></i>
+                <span>Đề Bài:</span>
+              </div>
+              <p class="px-5">
+                - Viết chương trình tính tiền lương nhân viên. <br />- Lương 1
+                ngày: 100.000 <br />- Cho người dùng nhập vào số ngày làm
+                <br />- Công thức tính lương: Lương 1 ngày * số ngày làm
+              </p>
+            </div>
+            <div class="fomr-group">
+              <input
+                type="text"
+                id="nhapLuong"
+                placeholder="Nhập lương một ngày"
+                class="nhapLuong me-3"
+              />
+              <input
+                type="text"
+                id="nhapNgayLam"
+                placeholder="Số ngày làm"
+                class="nhapNgayLam"
+              />
+            </div>
+            <button class="btn btn-primary mt-4 buttonMenu" id="tinhLuong">
+              Tính Lương
+            </button>
+            <div class="alert alert-success py-3 mt-4">
+              <i class="fa fa-hand-point-right text-warning"></i>
+              <span id="ketQua1"></span>
+            </div>
+          </div>
+          <div class="bai2" id="bai2">
+            <h1 class="text-center">Bài tập 2: Tính giá trị trung bình</h1>
+            <div class="fs-4">
+              <i class="fa fa-donate text-warning"></i>
+              <span>Tính giá trị trung bình</span>
+            </div>
+            <div class="form-group">
+              <div class="fs-4">
+                <i class="fa fa-lightbulb text-warning"></i>
+                <span>Đề Bài:</span>
+              </div>
+              <p class="px-5">
+                - Viết chương trình nhập vào 5 số thực. <br />- Tính giá trị
+                trung bình của 5 số này và xuất ra màn hình.<br />- Cho người
+                dùng nhập vào số ngày làm <br />- Công thức tính lương: Lương 1
+                ngày * số ngày làm <br /><br />
+                -Gợi ý: Giá trị trung bình là tổng của 5 số người dùng nhập chia
+                cho 5
+              </p>
+            </div>
+            <div class="fomr-group">
+              <input
+                type="text"
+                id="nhapSo1"
+                placeholder="Nhập số thứ nhất"
+                class="nhapLuong"
+              />
+              <input
+                type="text"
+                id="nhapSo2"
+                placeholder="Nhập số thứ hai"
+                class="nhapNgayLam"
+              />
+              <input
+                type="text"
+                id="nhapSo3"
+                placeholder="Nhập số thứ ba"
+                class="nhapNgayLam"
+              />
+              <input
+                type="text"
+                id="nhapSo4"
+                placeholder="Nhập số thứ bốn"
+                class="nhapNgayLam"
+              />
+              <input
+                type="text"
+                id="nhapSo5"
+                placeholder="Nhập số thứ năm"
+                class="nhapNgayLam"
+              />
+            </div>
+            <button class="btn btn-primary mt-4" id="tinhSoTB">
+              Tính Trung Bình
+            </button>
+            <div class="alert alert-success py-3 mt-4">
+              <i class="fa fa-hand-point-right text-warning"></i>
+              <span id="ketQua2"></span>
+            </div>
+          </div>
+          <div class="bai3">
+            <h1 class="text-center">Bài tập 3: Quy đổi tiền</h1>
+            <div class="fs-4">
+              <i class="fa fa-donate text-warning"></i>
+              <span>Quy đổi tiền</span>
+            </div>
+            <div class="form-group">
+              <div class="fs-4">
+                <i class="fa fa-lightbulb text-warning"></i>
+                <span>Đề Bài:</span>
+              </div>
+              <p class="px-5">
+                - Giá USD hiện nay đang là 23.500 VND. <br />- Viết chương trình
+                quy đổi từ USD sang VND. <br />- Cho người dùng nhập vào số tiền
+                sau quy đổi VND. <br />
+                <br />
+                -Ví dụ: Người dùng nhập 2 USD => Xuất ra 47.000 VND.
+              </p>
+            </div>
+            <div class="fomr-group">
+              <input
+                type="text"
+                id="nhapSoUSD"
+                placeholder="Nhập số tiền USD"
+                class="nhapLuong me-3"
+              />
+            </div>
+            <button class="btn btn-primary mt-4" id="tinhUSD">
+              Quy đổi tiền
+            </button>
+            <div class="alert alert-success py-3 mt-4">
+              <i class="fa fa-hand-point-right text-warning"></i>
+              <span id="ketQua3"></span>
+            </div>
+          </div>
+          <div class="bai4">
+            <h1 class="text-center">
+              Bài tập 4: Tính diện tích, chu vi hình chữ nhật
+            </h1>
+            <div class="fs-4">
+              <i class="fa fa-donate text-warning"></i>
+              <span>Tính diện tích, chu vi hình chữ nhật</span>
+            </div>
+            <div class="form-group">
+              <div class="fs-4">
+                <i class="fa fa-lightbulb text-warning"></i>
+                <span>Đề Bài:</span>
+              </div>
+              <p class="px-5">
+                - Viết chương trình nhập vào 2 chiều dài và chiều rọng của HCN.
+                <br />- Tính và xuất ra diện tích, chu vi của HCN đó <<br /><br />
+                -Công thức: <br />
+                -Diện = dài * rộng. <br />
+                -Chu vi = (rộng + dài) * 2
+              </p>
+            </div>
+            <div class="fomr-group">
+              <input
+                type="text"
+                id="nhapChieuDai"
+                placeholder="Nhập chiều dài"
+                class="nhapLuong me-3"
+              />
+              <input
+                type="text"
+                id="nhapChieuRong"
+                placeholder="Nhập chiều rộng"
+                class="nhapNgayLam"
+              />
+            </div>
+            <button class="btn btn-primary mt-4" id="tinhHCN">Tính</button>
+            <div class="alert alert-success py-3 mt-4">
+              <i class="fa fa-hand-point-right text-warning"></i>
+              <span id="ketQua4"></span>
+            </div>
+          </div>
+          <div class="bai5">
+            <h1 class="text-center">Bài tập 5: Tính tổng 2 ký số</h1>
+            <div class="fs-4">
+              <i class="fa fa-donate text-warning"></i>
+              <span>Tính tổng 2 ký số</span>
+            </div>
+            <div class="form-group">
+              <div class="fs-4">
+                <i class="fa fa-lightbulb text-warning"></i>
+                <span>Đề Bài:</span>
+              </div>
+              <p class="px-5">
+                - Viết chương trình nhập vào 1 số có 2 chữ số (VD: 12, 44, 83).
+                <br />- Tính tổng 2 ký số của số vừa nhập. <br />
+                Ví dụ: <br />
+                <br />
+                12 => Tổng là 1 + 2 = 3. <br />
+                44 => Tổng là 4 + 4 = 8 <br />
+                <br />
+                Gợi ý: <br />
+                Cách lấy số hàng đơn vị: int so_hang_dv = so % 10; cách lấy số
+                hàng chục: int so_hang_chuc = so/10;
+              </p>
+            </div>
+            <div class="fomr-group">
+              <input
+                type="text"
+                id="nhapSoChuSo"
+                placeholder="Nhập số có 2 chữ số"
+                class="nhapLuong me-3"
+              />
+            </div>
+            <button class="btn btn-primary mt-4" id="tinhTongChuSo">
+              Tính tổng
+            </button>
+            <div class="alert alert-success py-3 mt-4">
+              <i class="fa fa-hand-point-right text-warning"></i>
+              <span id="ketQua5"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main JS -->
+    <script src="./js/mainjs.js"></script>
+    <script src="./js/baiTap.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
